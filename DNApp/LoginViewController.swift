@@ -28,6 +28,12 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func closeButtonDidTouch(sender: AnyObject) {
+        dialogView.animation = "zoomOut"
+        dialogView.animateNext{
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
 
     /*
     // MARK: - Navigation

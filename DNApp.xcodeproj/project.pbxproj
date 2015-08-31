@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222311B9399C7001955CB /* LearnViewController.swift */; };
+		4C4222341B9474F1001955CB /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222331B9474F1001955CB /* StoriesTableViewController.swift */; };
+		4C4222361B949976001955CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222351B949976001955CB /* MenuViewController.swift */; };
+		4C4222381B949B97001955CB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222371B949B97001955CB /* WebViewController.swift */; };
+		4C42223A1B949F3D001955CB /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222391B949F3D001955CB /* StoryTableViewCell.swift */; };
 		4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C161B8F4CBE00348560 /* AppDelegate.swift */; };
-		4CD70C191B8F4CBE00348560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C181B8F4CBE00348560 /* ViewController.swift */; };
 		4CD70C1C1B8F4CBE00348560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD70C1A1B8F4CBE00348560 /* Main.storyboard */; };
 		4CD70C1F1B8F4CBE00348560 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C1D1B8F4CBE00348560 /* DNApp.xcdatamodeld */; };
 		4CD70C211B8F4CBE00348560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD70C201B8F4CBE00348560 /* Assets.xcassets */; };
@@ -48,9 +51,12 @@
 
 /* Begin PBXFileReference section */
 		4C4222311B9399C7001955CB /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		4C4222331B9474F1001955CB /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
+		4C4222351B949976001955CB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4C4222371B949B97001955CB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		4C4222391B949F3D001955CB /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		4CD70C131B8F4CBE00348560 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD70C161B8F4CBE00348560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CD70C181B8F4CBE00348560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CD70C1B1B8F4CBE00348560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CD70C1E1B8F4CBE00348560 /* DNApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DNApp.xcdatamodel; sourceTree = "<group>"; };
 		4CD70C201B8F4CBE00348560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,10 +127,13 @@
 			children = (
 				4CD70C2B1B8F502400348560 /* Spring */,
 				4CD70C161B8F4CBE00348560 /* AppDelegate.swift */,
-				4CD70C181B8F4CBE00348560 /* ViewController.swift */,
 				4CD70C671B91E1D500348560 /* LoginViewController.swift */,
+				4C4222371B949B97001955CB /* WebViewController.swift */,
+				4C4222351B949976001955CB /* MenuViewController.swift */,
 				4CD70C1A1B8F4CBE00348560 /* Main.storyboard */,
+				4C4222391B949F3D001955CB /* StoryTableViewCell.swift */,
 				4C4222311B9399C7001955CB /* LearnViewController.swift */,
+				4C4222331B9474F1001955CB /* StoriesTableViewController.swift */,
 				4CD70C201B8F4CBE00348560 /* Assets.xcassets */,
 				4CD70C221B8F4CBE00348560 /* LaunchScreen.storyboard */,
 				4CD70C251B8F4CBE00348560 /* Info.plist */,
@@ -247,6 +256,7 @@
 				4CD70C5F1B8F502400348560 /* SpringImageView.swift in Sources */,
 				4CD70C4C1B8F502400348560 /* AutoTextView.swift in Sources */,
 				4CD70C551B8F502400348560 /* ImageLoader.swift in Sources */,
+				4C4222361B949976001955CB /* MenuViewController.swift in Sources */,
 				4CD70C5A1B8F502400348560 /* Misc.swift in Sources */,
 				4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */,
 				4CD70C4D1B8F502400348560 /* BlurView.swift in Sources */,
@@ -254,7 +264,6 @@
 				4CD70C581B8F502400348560 /* LoadingView.swift in Sources */,
 				4CD70C611B8F502400348560 /* SpringTextField.swift in Sources */,
 				4CD70C5C1B8F502400348560 /* Spring.swift in Sources */,
-				4CD70C191B8F4CBE00348560 /* ViewController.swift in Sources */,
 				4CD70C5B1B8F502400348560 /* SoundPlayer.swift in Sources */,
 				4CD70C541B8F502400348560 /* DesignableView.swift in Sources */,
 				4CD70C681B91E1D500348560 /* LoginViewController.swift in Sources */,
@@ -266,15 +275,18 @@
 				4CD70C641B8F502400348560 /* TransitionManager.swift in Sources */,
 				4CD70C601B8F502400348560 /* SpringLabel.swift in Sources */,
 				4CD70C4A1B8F502400348560 /* AsyncButton.swift in Sources */,
+				4C4222341B9474F1001955CB /* StoriesTableViewController.swift in Sources */,
 				4CD70C4B1B8F502400348560 /* AsyncImageView.swift in Sources */,
 				4CD70C531B8F502400348560 /* DesignableTextView.swift in Sources */,
 				4CD70C631B8F502400348560 /* SpringView.swift in Sources */,
 				4CD70C621B8F502400348560 /* SpringTextView.swift in Sources */,
 				4CD70C571B8F502400348560 /* KeyboardLayoutConstraint.swift in Sources */,
+				4C4222381B949B97001955CB /* WebViewController.swift in Sources */,
 				4CD70C5E1B8F502400348560 /* SpringButton.swift in Sources */,
 				4CD70C5D1B8F502400348560 /* SpringAnimation.swift in Sources */,
 				4CD70C4F1B8F502400348560 /* DesignableImageView.swift in Sources */,
 				4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */,
+				4C42223A1B949F3D001955CB /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +398,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DNApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelklopf.DNApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DNApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.michaelklopf.DNApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
