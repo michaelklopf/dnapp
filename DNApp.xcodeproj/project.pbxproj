@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222311B9399C7001955CB /* LearnViewController.swift */; };
 		4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C161B8F4CBE00348560 /* AppDelegate.swift */; };
 		4CD70C191B8F4CBE00348560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C181B8F4CBE00348560 /* ViewController.swift */; };
 		4CD70C1C1B8F4CBE00348560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD70C1A1B8F4CBE00348560 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C4222311B9399C7001955CB /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		4CD70C131B8F4CBE00348560 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD70C161B8F4CBE00348560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD70C181B8F4CBE00348560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				4CD70C181B8F4CBE00348560 /* ViewController.swift */,
 				4CD70C671B91E1D500348560 /* LoginViewController.swift */,
 				4CD70C1A1B8F4CBE00348560 /* Main.storyboard */,
+				4C4222311B9399C7001955CB /* LearnViewController.swift */,
 				4CD70C201B8F4CBE00348560 /* Assets.xcassets */,
 				4CD70C221B8F4CBE00348560 /* LaunchScreen.storyboard */,
 				4CD70C251B8F4CBE00348560 /* Info.plist */,
@@ -245,6 +248,7 @@
 				4CD70C4C1B8F502400348560 /* AutoTextView.swift in Sources */,
 				4CD70C551B8F502400348560 /* ImageLoader.swift in Sources */,
 				4CD70C5A1B8F502400348560 /* Misc.swift in Sources */,
+				4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */,
 				4CD70C4D1B8F502400348560 /* BlurView.swift in Sources */,
 				4CD70C661B8F502400348560 /* UnwindSegue.swift in Sources */,
 				4CD70C581B8F502400348560 /* LoadingView.swift in Sources */,
@@ -418,6 +422,7 @@
 				4CD70C2A1B8F4CBE00348560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
