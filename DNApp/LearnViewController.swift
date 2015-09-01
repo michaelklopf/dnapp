@@ -33,6 +33,11 @@ class LearnViewController: UIViewController {
     @IBAction func learnButtonDidTouch(sender: AnyObject) {
         bookImageView.animation = "pop"
         bookImageView.animate()
+        openURL("http://designcode.io")
+    }
+
+    @IBAction func twitterButtonDidTouch(sender: AnyObject) {
+        openURL("http://twitter.com/michaelklopf")
     }
 
     @IBAction func closeButtonDidTouch(sender: AnyObject) {
@@ -44,6 +49,11 @@ class LearnViewController: UIViewController {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         view.endEditing(true)
+    }
+    
+    func openURL(url: String) {
+        let targetURL = NSURL(string: url)
+        UIApplication.sharedApplication().openURL(targetURL!)
     }
 
     /*

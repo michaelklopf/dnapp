@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,17 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="8-Startup" translatesAutoresizingMaskIntoConstraints="NO" id="U0K-I6-nLe">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="599"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5R-kt-eSi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.3843137254901961" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="C0t-Gv-ZpU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="U0K-I6-nLe" secondAttribute="trailing" id="HpM-8N-6AS"/>
-                            <constraint firstItem="U0K-I6-nLe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tXH-Zv-Z5v"/>
-                            <constraint firstItem="U0K-I6-nLe" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vS5-q4-bKn"/>
-                            <constraint firstItem="U0K-I6-nLe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ySy-ka-zMj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M5R-kt-eSi" secondAttribute="trailing" constant="-20" id="H9j-Ry-MZN"/>
+                            <constraint firstItem="M5R-kt-eSi" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="NAc-DI-VcS"/>
+                            <constraint firstItem="M5R-kt-eSi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="XAV-2y-SWh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -35,7 +40,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="8-Startup" width="320" height="568"/>
-    </resources>
 </document>

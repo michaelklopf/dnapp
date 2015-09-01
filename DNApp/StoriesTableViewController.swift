@@ -9,6 +9,8 @@
 import UIKit
 
 class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
+    
+    let transitionManager = TransitionManager()
 
     @IBAction func menuButtonDidTouch(sender: AnyObject) {
         performSegueWithIdentifier("MenuSegue", sender: self)
@@ -34,7 +36,7 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("WebSegue", sender: self)
+        performSegueWithIdentifier("WebSegue", sender: indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
@@ -63,6 +65,17 @@ class StoriesTableViewController: UITableViewController, StoryTableViewCellDeleg
                 let indexPath = tableView.indexPathForCell(cell)
                 toView.story = data[indexPath!.row]
             }
+        }
+        
+        if segue.identifier == "WebSegue" {
+            if let toView = segue.destinationViewController as? WebViewController {
+                if let indexPath = sender as? NSIndexPath {
+                    toView.url = data[indexPath.row]["url"].string!
+                    toView.transitioningDelegate = transitionManager
+                }
+            }
+            UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Fade)
+            // Setting "View controller-based status bar appearance" to NO is necessary for working with that
         }
     }
 }

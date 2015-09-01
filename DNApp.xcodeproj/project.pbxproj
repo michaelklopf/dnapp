@@ -15,6 +15,11 @@
 		4C42223C1B958852001955CB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42223B1B958852001955CB /* Data.swift */; };
 		4C42223E1B959BFF001955CB /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */; };
 		4C4222401B95B381001955CB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42223F1B95B381001955CB /* SwiftyJSON.swift */; };
+		4C4222421B95CA14001955CB /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222411B95CA14001955CB /* CommentTableViewCell.swift */; };
+		4C7673271B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7673201B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.m */; };
+		4C7673281B95E99000D37C4E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7673221B95E99000D37C4E /* TPKeyboardAvoidingScrollView.m */; };
+		4C7673291B95E99000D37C4E /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7673241B95E99000D37C4E /* TPKeyboardAvoidingTableView.m */; };
+		4C76732A1B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7673261B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C161B8F4CBE00348560 /* AppDelegate.swift */; };
 		4CD70C1C1B8F4CBE00348560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD70C1A1B8F4CBE00348560 /* Main.storyboard */; };
 		4CD70C1F1B8F4CBE00348560 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C1D1B8F4CBE00348560 /* DNApp.xcdatamodeld */; };
@@ -61,6 +66,15 @@
 		4C42223B1B958852001955CB /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		4C42223F1B95B381001955CB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Spring/SwiftyJSON.swift; sourceTree = "<group>"; };
+		4C4222411B95CA14001955CB /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		4C76731F1B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		4C7673201B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		4C7673211B95E99000D37C4E /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		4C7673221B95E99000D37C4E /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		4C7673231B95E99000D37C4E /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		4C7673241B95E99000D37C4E /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		4C7673251B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		4C7673261B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		4CD70C131B8F4CBE00348560 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD70C161B8F4CBE00348560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD70C1B1B8F4CBE00348560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C76731E1B95E99000D37C4E /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				4C76731F1B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.h */,
+				4C7673201B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.m */,
+				4C7673211B95E99000D37C4E /* TPKeyboardAvoidingScrollView.h */,
+				4C7673221B95E99000D37C4E /* TPKeyboardAvoidingScrollView.m */,
+				4C7673231B95E99000D37C4E /* TPKeyboardAvoidingTableView.h */,
+				4C7673241B95E99000D37C4E /* TPKeyboardAvoidingTableView.m */,
+				4C7673251B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				4C7673261B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 		4CD70C0A1B8F4CBE00348560 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +160,7 @@
 		4CD70C151B8F4CBE00348560 /* DNApp */ = {
 			isa = PBXGroup;
 			children = (
+				4C76731E1B95E99000D37C4E /* TPKeyboardAvoiding */,
 				4C42223F1B95B381001955CB /* SwiftyJSON.swift */,
 				4CD70C2B1B8F502400348560 /* Spring */,
 				4CD70C161B8F4CBE00348560 /* AppDelegate.swift */,
@@ -138,6 +168,7 @@
 				4C4222371B949B97001955CB /* WebViewController.swift */,
 				4C4222351B949976001955CB /* MenuViewController.swift */,
 				4CD70C1A1B8F4CBE00348560 /* Main.storyboard */,
+				4C4222411B95CA14001955CB /* CommentTableViewCell.swift */,
 				4C4222391B949F3D001955CB /* StoryTableViewCell.swift */,
 				4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */,
 				4C4222311B9399C7001955CB /* LearnViewController.swift */,
@@ -262,15 +293,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD70C501B8F502400348560 /* DesignableLabel.swift in Sources */,
+				4C76732A1B95E99000D37C4E /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4CD70C5F1B8F502400348560 /* SpringImageView.swift in Sources */,
 				4CD70C4C1B8F502400348560 /* AutoTextView.swift in Sources */,
 				4CD70C551B8F502400348560 /* ImageLoader.swift in Sources */,
 				4C4222361B949976001955CB /* MenuViewController.swift in Sources */,
 				4CD70C5A1B8F502400348560 /* Misc.swift in Sources */,
+				4C7673281B95E99000D37C4E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */,
 				4C4222401B95B381001955CB /* SwiftyJSON.swift in Sources */,
+				4C7673291B95E99000D37C4E /* TPKeyboardAvoidingTableView.m in Sources */,
 				4C42223C1B958852001955CB /* Data.swift in Sources */,
 				4CD70C4D1B8F502400348560 /* BlurView.swift in Sources */,
+				4C7673271B95E99000D37C4E /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				4CD70C661B8F502400348560 /* UnwindSegue.swift in Sources */,
 				4CD70C581B8F502400348560 /* LoadingView.swift in Sources */,
 				4CD70C611B8F502400348560 /* SpringTextField.swift in Sources */,
@@ -295,6 +330,7 @@
 				4CD70C571B8F502400348560 /* KeyboardLayoutConstraint.swift in Sources */,
 				4C4222381B949B97001955CB /* WebViewController.swift in Sources */,
 				4CD70C5E1B8F502400348560 /* SpringButton.swift in Sources */,
+				4C4222421B95CA14001955CB /* CommentTableViewCell.swift in Sources */,
 				4CD70C5D1B8F502400348560 /* SpringAnimation.swift in Sources */,
 				4CD70C4F1B8F502400348560 /* DesignableImageView.swift in Sources */,
 				4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */,
