@@ -12,6 +12,8 @@
 		4C4222361B949976001955CB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222351B949976001955CB /* MenuViewController.swift */; };
 		4C4222381B949B97001955CB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222371B949B97001955CB /* WebViewController.swift */; };
 		4C42223A1B949F3D001955CB /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4222391B949F3D001955CB /* StoryTableViewCell.swift */; };
+		4C42223C1B958852001955CB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42223B1B958852001955CB /* Data.swift */; };
+		4C42223E1B959BFF001955CB /* CommentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */; };
 		4CD70C171B8F4CBE00348560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C161B8F4CBE00348560 /* AppDelegate.swift */; };
 		4CD70C1C1B8F4CBE00348560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD70C1A1B8F4CBE00348560 /* Main.storyboard */; };
 		4CD70C1F1B8F4CBE00348560 /* DNApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD70C1D1B8F4CBE00348560 /* DNApp.xcdatamodeld */; };
@@ -55,6 +57,8 @@
 		4C4222351B949976001955CB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4C4222371B949B97001955CB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4C4222391B949F3D001955CB /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		4C42223B1B958852001955CB /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTableViewController.swift; sourceTree = "<group>"; };
 		4CD70C131B8F4CBE00348560 /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD70C161B8F4CBE00348560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD70C1B1B8F4CBE00348560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -132,8 +136,10 @@
 				4C4222351B949976001955CB /* MenuViewController.swift */,
 				4CD70C1A1B8F4CBE00348560 /* Main.storyboard */,
 				4C4222391B949F3D001955CB /* StoryTableViewCell.swift */,
+				4C42223D1B959BFF001955CB /* CommentsTableViewController.swift */,
 				4C4222311B9399C7001955CB /* LearnViewController.swift */,
 				4C4222331B9474F1001955CB /* StoriesTableViewController.swift */,
+				4C42223B1B958852001955CB /* Data.swift */,
 				4CD70C201B8F4CBE00348560 /* Assets.xcassets */,
 				4CD70C221B8F4CBE00348560 /* LaunchScreen.storyboard */,
 				4CD70C251B8F4CBE00348560 /* Info.plist */,
@@ -259,11 +265,13 @@
 				4C4222361B949976001955CB /* MenuViewController.swift in Sources */,
 				4CD70C5A1B8F502400348560 /* Misc.swift in Sources */,
 				4C4222321B9399C7001955CB /* LearnViewController.swift in Sources */,
+				4C42223C1B958852001955CB /* Data.swift in Sources */,
 				4CD70C4D1B8F502400348560 /* BlurView.swift in Sources */,
 				4CD70C661B8F502400348560 /* UnwindSegue.swift in Sources */,
 				4CD70C581B8F502400348560 /* LoadingView.swift in Sources */,
 				4CD70C611B8F502400348560 /* SpringTextField.swift in Sources */,
 				4CD70C5C1B8F502400348560 /* Spring.swift in Sources */,
+				4C42223E1B959BFF001955CB /* CommentsTableViewController.swift in Sources */,
 				4CD70C5B1B8F502400348560 /* SoundPlayer.swift in Sources */,
 				4CD70C541B8F502400348560 /* DesignableView.swift in Sources */,
 				4CD70C681B91E1D500348560 /* LoginViewController.swift in Sources */,
