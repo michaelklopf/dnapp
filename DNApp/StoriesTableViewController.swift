@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StoriesTableViewController: UITableViewController {
+class StoriesTableViewController: UITableViewController, StoryTableViewCellDelegate {
 
     @IBAction func menuButtonDidTouch(sender: AnyObject) {
         performSegueWithIdentifier("MenuSegue", sender: self)
@@ -33,6 +33,8 @@ class StoriesTableViewController: UITableViewController {
         cell.upvoteButton.setTitle("59", forState: UIControlState.Normal)
         cell.commentButton.setTitle("32", forState: UIControlState.Normal)
         
+        cell.delegate = self
+        
         return cell
     }
     
@@ -48,5 +50,14 @@ class StoriesTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+    }
+    
+    // MARK: StoryTableViewCellDelegate
+    func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject) {
+        // TODO: WAAH
+    }
+    
+    func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject) {
+        performSegueWithIdentifier("CommentsSegue", sender: cell)
     }
 }
