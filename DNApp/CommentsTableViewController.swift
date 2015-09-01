@@ -10,11 +10,22 @@ import UIKit
 
 class CommentsTableViewController: UITableViewController {
 
-    var story = [String: AnyObject]()
+    var story: JSON!
+    var comments: JSON!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(story)
+        comments = story["comments"]
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return comments.count + 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell") as! StoryTableViewCell
+        cell.configureWithStory(story)
+        return cell
     }
 }

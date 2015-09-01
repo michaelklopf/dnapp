@@ -10,7 +10,7 @@ import UIKit
 
 // Parse JSON data with http://jsonlint.com
 
-var data: [[String:AnyObject]] = [
+var data: JSON = [
     [
         "id": 44959,
         "title": "Testing Apple watch applications my way!",
