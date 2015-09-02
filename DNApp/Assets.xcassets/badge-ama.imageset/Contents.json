@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "iPhone1024.jpg",
+      "filename" : "badge-ama.pdf",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "iPhone1024.png",
       "scale" : "2x"
     },
     {
