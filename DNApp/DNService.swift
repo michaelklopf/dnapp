@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 struct DNService {
     //Doc: https://github.com/metalabdesign/dn_api_v2
@@ -35,9 +36,20 @@ struct DNService {
             case .CommentReply(let id): return "/api/v1/comments/\(id)/reply"
             }
         }
-        
-        static func storiesForSection(section: String, page: Int, response: (JSON) -> ()) {
-            
-        }
+    }
+    
+    static func storiesForSection(section: String, page: Int, response: (JSON) -> ()) {
+        let urlString = baseURL + ResourcePath.Stories.description + "/" + section
+        let parameters = [
+            "page": String(page),
+            "client_id": clientID
+        ]
+        Alamofire.request(.GET, urlString, parameters: parameters)
+            .responseJSON { responseData in
+                if let json = responseData.result.value {
+                    let stories = JSON(json ?? [])
+                    response(stories)
+                }
+            }
     }
 }
